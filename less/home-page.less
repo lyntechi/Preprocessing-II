@@ -6,20 +6,39 @@
 
 
   .home {
-    header {
- 
+    width: 60%;
+    margin: 0 auto;
+    @media @mobile{
+      width: 100%;
+    }//this closes media query for .home container
+
+    header{
       margin: 0 auto;
       width: 100%;
-      // border: 2px solid red;
-         
-     }//this closes header
+      padding: 5% 0;
+      @media @mobile {
+        h2{
+          margin-top: 5%;
+    
+      }//this closes media query for h2 in header
+    }//this closes media query for header
+   
+  }//this closes header
 
-  .content-section {
+
+
+    .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    
+     @media @mobile{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+     }
+   
    
     
     .text-content {
@@ -71,5 +90,10 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    button {
+     
+      .buttonstyles();
+    }
+
   }
 }// home
