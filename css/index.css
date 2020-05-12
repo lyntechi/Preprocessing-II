@@ -85,7 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 2px solid red;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -106,6 +105,7 @@ section {
 }
 body {
   line-height: 1;
+  border: 2px solid red;
 }
 ol,
 ul {
@@ -142,6 +142,7 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+  font-weight: bold;
 }
 h1 {
   font-size: 4rem;
@@ -158,6 +159,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  font-weight: bold;
 }
 img {
   max-width: 100%;
@@ -172,25 +174,27 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 3%;
   width: 100%;
   border-bottom: dashed 2px #C0C0C0;
+  background-color: white;
 }
 nav h1 {
   margin-right: 30%;
+  font-weight: bold;
 }
 nav div.links {
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 50%;
 }
 nav div.links a {
   color: #212529;
   text-decoration: none;
   font-weight: bold;
-  padding-right: 5%;
+  padding-right: 10%;
   padding-top: 5%;
-  font-size: 1.2rem;
+  margin-bottom: 2%;
+  font-size: 1.4rem;
 }
 .footer {
   width: 100%;
@@ -203,9 +207,9 @@ nav div.links a {
   font-size: 1.6rem;
   padding: 20px;
 }
-header {
-  width: 57%;
+.home header {
   margin: 0 auto;
+  width: 100%;
 }
 .home .content-section {
   margin: 30px 0;
