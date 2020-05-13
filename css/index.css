@@ -85,6 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
+  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -127,7 +128,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: solid red 2px;
 }
 html {
   font-size: 62.5%;
@@ -183,6 +183,9 @@ nav h1 {
   width: 100%;
   margin: 0 auto;
 }
+nav h1:hover {
+  color: red;
+}
 @media (max-width: 500px) {
   nav h1 {
     text-align: center;
@@ -200,6 +203,9 @@ nav div.links a {
   font-size: 1.4rem;
   width: 100%;
   text-align: center;
+}
+nav div.links a:hover {
+  color: red;
 }
 @media (max-width: 500px) {
   nav div.links a {
@@ -230,6 +236,7 @@ nav div.links a {
 @media (max-width: 500px) {
   .home {
     width: 100%;
+    padding: 5%;
   }
 }
 .home header {
@@ -259,16 +266,38 @@ nav div.links a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -282,6 +311,11 @@ nav div.links a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -291,17 +325,28 @@ nav div.links a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
 .home .content-pick button {
-  background-color: teal;
-  padding: 5%;
+  background-color: #00968c;
   color: #FFFFFF;
-  border-radius: 28%;
+  border-radius: 10px;
   font-weight: bold;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  height: 5.8vh;
   font-size: 1.8rem;
 }
