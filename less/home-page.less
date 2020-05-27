@@ -1,31 +1,84 @@
-.home {
 
-  .content-section {
+
+
+
+
+
+
+  .home {
+    width: 60%;
+    margin: 0 auto;
+    @media @mobile{
+      width: 100%;
+      padding: 5%;
+    }//this closes media query for .home container
+
+    header{
+      margin: 0 auto;
+      width: 100%;
+      padding: 5% 0;
+    
+      @media @mobile {
+        h2{
+          margin-top: 5%;
+          
+    
+      }//this closes media query for h2 in header
+    }//this closes media query for header
+   
+  }//this closes header
+
+
+
+    .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    
+     @media @mobile{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+     }
+   
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+      @media @mobile {
+        width: 100%;
+        margin-top: 5%;
+      }//this closes media query for .text-content
+
+    }//this closes .text-content
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+      }//this closes media query for .img-content
+
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }//this closes media query for img
       }
+
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+       display: flex;
+       flex-direction: column-reverse;
+    }//this closes media query for .inverse-content
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +94,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+    }//this closes media query for .content-destionation
 
     img {
       border-radius: 10px;
@@ -53,9 +109,23 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }//this closes media query for .content-pick
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }//this closes .destination
+    }//this closes .destination
+    button {
+       
+      .buttonstyles();
     }
+
   }
 }// home
